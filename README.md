@@ -2,6 +2,9 @@
 
 This tool scans websites for various types of XSS vulnerabilities (Reflected, Stored, and DOM-based XSS).
 
+![2024-09-05_17-06](https://github.com/user-attachments/assets/ded67dd8-6de4-465f-a547-f21ee07983cd)
+
+
 ## Features:
 - Dynamic form detection
 - XSS payload testing
