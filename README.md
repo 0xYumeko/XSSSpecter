@@ -19,7 +19,7 @@ pip install -r requirements.txt
 ```
 
 ## Usage:
-`
+
 ```bash
 python3 XSSSpecter.py -u http://example.com -p payloads.txt -o output.txt
 ```
