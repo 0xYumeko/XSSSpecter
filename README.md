@@ -25,10 +25,7 @@ python3 XSSSpecter.py -u http://example.com -p payloads.txt -o output.txt
 ```
 
 
-## Example Output:
 
-
-This section explains how to install the tool using `git clone` and `pip install`, and provides usage examples with command-line arguments. Adding an example output image will also make it easier for users to understand.
 
 ### 3. **Requirements File (`requirements.txt`)**
 
