@@ -84,6 +84,10 @@ def retry_request(func, *args, retries=3, delay=5, **kwargs):
             response = func(*args, **kwargs)
             if response.status_code == 200:
                 return response
+            elif response.status_code == 403:
+                # Ignore warnings for status code 403
+                logging.info(f"Received status code 403. Skipping retry.")
+                return response
             else:
                 logging.warning(f"Received status code {response.status_code}. Retrying...")
         except requests.RequestException as e:
@@ -140,7 +144,6 @@ def stored_xss_check(url, payload):
 
 def dom_xss_check(url, payload):
     logging.info(f"{Fore.LIGHTMAGENTA_EX}Checking for DOM-based XSS vulnerabilities...")
-
     return False
 
 def scan_xss(url, payload_file, output_file):
